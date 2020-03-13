@@ -1,0 +1,111 @@
+@import "layout/navigation";
+@import "abstracts/variables";
+@import "layout/hero";
+@import "layout/mainBox";
+@import "layout/bgImage";
+@import "layout/cars";
+@import "layout/footer";
+@import "components/container";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+body,h1,h2,h3,h4,h5{
+  font-family: Arial;
+}
+@media only screen and (max-width: 1120px) {
+   header{
+     display: none;
+   }
+}
+
+
+@media only screen and (max-width: 992px) {
+  .nav-wrapper {
+    width: 968px;
+  }
+  .nav-container {
+    width: 960px;
+  }
+  #hero {
+    text-align: center;
+  }
+  .card-container {
+    flex-direction: column;
+  }
+  #main-box .row {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  #main-box {
+    .btn-right {
+      justify-content: center;
+      margin-top: 50px;
+
+      text-align: center;
+    }
+    .text-image-container {
+      .image-column {
+        padding-bottom: 40px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #hero {
+    text-align: center;
+  }
+  .card-container {
+    flex-direction: column;
+  }
+  #main-box .row {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  #bg-image .text-container {
+    
+    padding-left: 0px;
+}
+}
+
+@media only screen and (max-width: 600px) {
+  .buttons {
+    flex-direction: column;
+    .btn-basic {
+      padding-bottom: 10px;
+      padding-right: 0px;
+    }
+  }
+
+  #hero {
+    .row {
+      flex-direction: column;
+      text-align: center;
+    }
+    .right-column {
+      padding-top: 10px;
+    }
+  }
+  #main-box {
+    .text-image-container {
+      .text-column {
+        padding: 0;
+      }
+      .image-column {
+        padding-bottom: 20px;
+      }
+    }
+  }
+
+  .main-list {
+    .nest-wrapper {
+      flex-direction: column;
+    }
+  }
+}

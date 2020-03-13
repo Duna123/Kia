@@ -1,0 +1,111 @@
+@import "../abstracts/variables";
+#main-box {
+  padding: 40px 0;
+  background-color: $whiteColor;
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+  }
+  .card-container {
+    display: flex;
+    flex-wrap: nowrap;
+
+    .card {
+      display: block;
+      padding: 20px;
+      text-align: center;
+      .image-top {
+        padding-bottom: 10px;
+        line-height: 10px;
+        img {
+          color: $redColor;
+          height: 55px;
+        }
+      }
+      .card-text {
+        margin-top: 10px;
+        h3 {
+          color: $blackTextColor;
+          padding-bottom: 10px;
+        }
+        p {
+          color: $darkGray;
+        }
+      }
+    }
+  }
+  .btn-right {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 50px;
+    margin-right: 24px;
+    .btn {
+      background-color: $redColor;
+      padding: 20px 20px 20px 20px;
+      border-radius: 50px;
+      -webkit-box-shadow: -7px 9px 34px -10px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: -7px 9px 34px -10px rgba(0, 0, 0, 0.75);
+      box-shadow: -7px 9px 34px -10px rgba(0, 0, 0, 0.75);
+    }
+  }
+  .text-image-container {
+    padding: 70px 0px;
+    
+    .image-column {
+      padding: 36px;
+
+      img {
+        width: 100%;
+        //
+        -webkit-box-shadow: -127px -185px 11px -33px rgba(250, 240, 227, 1);
+        -moz-box-shadow: -127px -185px 11px -33px rgba(250, 240, 227, 1);
+        box-shadow: -127px -185px 11px -33px rgba(250, 240, 227, 1);
+        -webkit-box-shadow: 175px 164px 0px -126px rgba(239, 248, 252, 1);
+        -moz-box-shadow: 175px 164px 0px -126px rgba(239, 248, 252, 1);
+        box-shadow: 175px 164px 0px -126px rgba(239, 248, 252, 1);
+      }
+    }
+  }
+
+  .text-column {
+    h1 {
+      color: $blackTextColor;
+    }
+    .text-color {
+      color: $redColor;
+    }
+    .list-items {
+      padding: 20px 0;
+      ul li {
+        text-decoration: none;
+        list-style: none;
+        padding: 10px 0;
+        color: $darkGray;
+        display: inline-flex;
+        line-height: 16px;
+        i {
+          color: $redColor;
+          padding-right: 18px;
+        }
+      }
+    }
+    .note {
+      padding-top: 10px;
+      span {
+        color: $redColor;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}

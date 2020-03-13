@@ -1,0 +1,27 @@
+@import "../abstracts/variables";
+
+#bg-image {
+  padding: 100px 0 100px 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url("/dist/img/kiaBg.png");
+  background-size: cover;
+
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  .text-container {
+    display: flex;
+    align-items: center;
+    padding-left: 130px;
+  }
+  .heading-text {
+    padding-bottom: 20px;
+    h1 {
+      color: $whiteColor;
+      span {
+        color: $redColor;
+      }
+    }
+  }
+  .parahgraph-text {
+    color: $whiteColor;
+  }
+}

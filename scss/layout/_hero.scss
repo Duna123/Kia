@@ -1,0 +1,40 @@
+@import "../abstracts/variables";
+
+#hero {
+  background-color: rgb(159, 163, 167);
+  padding-bottom: 40px;
+
+  h1 {
+    font-size: 35px;
+    color: $blackTextColor;
+  }
+  h2 {
+    color: $redColor;
+    padding: 20px 0;
+  }
+  .left-column {
+    margin-top: 91px;
+    .kia-care {
+      padding-bottom: 20px;
+    }
+  }
+  .right-column {
+    img {
+      width: 100%;
+    }
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+  }
+}
