@@ -9,7 +9,7 @@
   "author": "Vladko",
   "license": "MIT",
   "dependencies": {
-    "node-sass": "^4.13.1"
+    "node-sass": "^7.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^9.7.4"
